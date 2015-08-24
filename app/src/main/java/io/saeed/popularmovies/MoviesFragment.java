@@ -179,7 +179,7 @@ public class MoviesFragment extends Fragment {
                     .appendPath("3")
                     .appendPath("discover")
                     .appendPath("movie")
-                    .appendQueryParameter("api_key", "354bc6118f464541061311a8ebe450f6")
+                    .appendQueryParameter("api_key", " YOUR_API_KEY_HERE")
                     .appendQueryParameter("sort_by", sortOption);
 
             URL url = new URL(builder.toString());
