@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rhymesandjive.popularmovies.MovieDetailsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textColor="@color/White"
+            android:gravity="center_vertical"
+            android:background="@color/material_deep_teal_500"
+            android:paddingLeft="20dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:maxWidth="300dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/movie_poster"
+                android:text="2014"
+                android:textSize="30sp"
+                android:paddingTop="10dp"
+                android:paddingLeft="45dp"/>
+
+            <TextView
+                android:id="@+id/movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/movie_poster"
+                android:layout_toEndOf="@id/movie_poster"
+                android:layout_below="@id/movie_year"
+                android:text="8.5/10"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:paddingLeft="45dp"/>
+
+            <TextView
+                android:id="@+id/movie_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_poster"
+                android:textSize="15sp"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
